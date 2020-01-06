@@ -12,7 +12,7 @@ body {
 
 }
 
-a {
+header a {
     text-decoration: none;
     font-size: 1.2rem;
     color: #d38e64;
@@ -58,14 +58,13 @@ header nav a:last-child {
 
 
 .menubar {
-    width: 100%;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 3.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    height: 4.5rem;
 }
+
 
 #myBtn {
     display: none;
@@ -143,3 +142,29 @@ header nav a:last-child {
         height: 56.25vw;
     }
 }*/
+
+.dropdown {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
