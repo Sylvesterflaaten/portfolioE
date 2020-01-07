@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 header a {
@@ -154,9 +154,15 @@ header nav a:last-child {
     }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1200px) {
     #portfolio .centered {
         font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #portfolio .centered {
+        font-size: 1.2rem;
     }
 }
 
@@ -227,7 +233,7 @@ header nav a:last-child {
 #portfolio .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid #649ad3;
+    border-top: 2px solid #649ad3;
     padding: 1rem;
 }
 
@@ -266,12 +272,12 @@ header nav a:last-child {
 
 #gindhold .col {
     flex-grow: 1;
-    flex-basis: 500px;
+    flex-basis: 300px;
     padding: 1rem;
 }
 
 
-/*----------VIDE---------O*/
+/*----------VIDEO---------*/
 .video_responsive {
     overflow: hidden;
     padding-bottom: 56.25%;
