@@ -6,6 +6,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: white;
@@ -16,6 +20,12 @@ header a {
     text-decoration: none;
     font-size: 1.2rem;
     color: #d38e64;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 img {
@@ -47,6 +57,8 @@ header nav a:last-child {
     width: 100%;
     height: 100vw;
 }
+
+
 
 /*#portfolio {
     background-image: url(billeder/portfolio1.jpg);
@@ -133,6 +145,12 @@ header nav a:last-child {
     }
 }
 
+@media only screen and (min-width: 900px) {
+    #portfolio .centered {
+        font-size: 2rem;
+    }
+}
+
 /*
 @media only screen and (min-width: 900px) {
     #portfolio {
@@ -165,6 +183,95 @@ header nav a:last-child {
     display: block;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+#portfolio h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#portfolio .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+#portfolio .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase
+}
+
+#portfolio .centered:hover {
+    color: #d38e64;
+}
+
+#portfolio img {
+    opacity: 0.5;
+}
+
+#portfolio img:hover {
+    opacity: 0.8;
+}
+
+/*GRUNDLÆGGENDE WEB*/
+
+
+#gweb .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #d38e64;
+    padding: 1rem;
+}
+
+#gweb .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+
+
+/*---------------GRUNDLÆGGENDE UX---------------*/
+
+
+#gux .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #d38e64;
+    padding: 1rem;
+}
+
+#gux .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+/*GRUNDLÆGGENDE ANIMATION*/
+
+
+#ganimation .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #d38e64;
+    padding: 1rem;
+}
+
+#ganimation .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+/*GRUNDLÆGGENDE INDHOLD*/
+
+#gindhold .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #d38e64;
+    padding: 1rem;
+}
+
+#gindhold .col {
+    flex-grow: 1;
+    flex-basis: 500px;
 }
