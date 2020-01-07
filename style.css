@@ -13,7 +13,16 @@ html {
 body {
     margin: 0;
     background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
 
+h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #d38e64;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
 }
 
 header a {
@@ -23,7 +32,7 @@ header a {
 }
 
 section {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -215,19 +224,21 @@ header nav a:last-child {
     opacity: 0.8;
 }
 
+#portfolio .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #649ad3;
+    padding: 1rem;
+}
+
 /*GRUNDLÆGGENDE WEB*/
 
 
-#gweb .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #d38e64;
-    padding: 1rem;
-}
 
 #gweb .col {
     flex-grow: 1;
     flex-basis: 500px;
+    padding: 1rem;
 }
 
 
@@ -235,47 +246,32 @@ header nav a:last-child {
 /*---------------GRUNDLÆGGENDE UX---------------*/
 
 
-#gux .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #d38e64;
-    padding: 1rem;
-}
-
 #gux .col {
     flex-grow: 1;
-    flex-basis: 300px;
+    flex-basis: 250px;
+    padding: 1rem;
 }
 
 /*GRUNDLÆGGENDE ANIMATION*/
 
 
-#ganimation .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #d38e64;
-    padding: 1rem;
-}
-
 #ganimation .col {
     flex-grow: 1;
-    flex-basis: 300px;
+    flex-basis: 250px;
+    padding: 1rem;
 }
 
 /*GRUNDLÆGGENDE INDHOLD*/
 
-#gindhold .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #d38e64;
-    padding: 1rem;
-}
 
 #gindhold .col {
     flex-grow: 1;
     flex-basis: 500px;
+    padding: 1rem;
 }
 
+
+/*----------VIDE---------O*/
 .video_responsive {
     overflow: hidden;
     padding-bottom: 56.25%;
